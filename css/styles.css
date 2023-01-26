@@ -167,3 +167,102 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+/* Buttons */
+.btn {
+    border-radius: 5rem;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    scale: 1.1;
+    transition: scale 0.15s;
+}
+
+.btn--primary {
+    background: var(--color-accent);
+    font-size: 1.8rem;
+    font-weight: bold;
+    height: 7rem;
+    width: 40rem;
+}
+
+.btn--secondary {
+    height: 6rem;
+    width: 40rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.btn--normal {
+    background: white;
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+}
+
+.btn--popular {
+    background: var(--color-headings);
+}
+
+.btn--search {
+    height: 6.4rem;
+    width: 17.5rem;
+    background: var(--color-accent);
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon--search {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: white;
+}
+
+p {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.btn--gt {
+    height: 7.4rem;
+    width: 31.6rem;
+    background: var(--color-secondary);
+    font-size: 1.771rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .btn--primary {
+        height: 6.3rem;
+        width: 19rem;
+    }
+
+    .btn--secondary {
+        font-size: 1.4rem;
+        font-weight: 600;
+        height: 5rem;
+        width: 25.5rem;
+    }
+
+    .btn--search {
+        height: 5.5rem;
+        width: 17.6rem;
+    }
+
+    .btn--gt {
+        height: 6rem;
+        width: 22.5rem;
+    }
+}
