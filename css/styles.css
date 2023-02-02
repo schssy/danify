@@ -393,3 +393,37 @@ p {
         font-size: 1.7rem;
     }
 }
+
+/* Media Objects */
+.media-container {
+    display: flex;
+    flex-direction: column;
+    background: #000000;
+}
+
+.media-group {
+    display: flex;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+}
+
+.hmedia {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.pmedia {
+    padding-left: 0;
+    font-size: 2rem;
+    opacity: 0.8;
+    font-weight: 300;
+    color: #6a7278;
+}
+
+.icon--media {
+    fill: #2071db;
+    padding-top: 4.5rem;
+    padding-right: 1.5rem;
+}
