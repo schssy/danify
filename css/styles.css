@@ -235,10 +235,10 @@ a {
     fill: white;
 }
 
-p {
+/* p {
     margin: 0;
     padding-left: 1.5rem;
-}
+} */
 
 .btn--gt {
     height: 7.4rem;
@@ -533,11 +533,44 @@ p {
         margin-left: 6rem;
     }
 }
-/* .testimonial__icon {
-    position: absolute;
-    right: -2rem;
-    top: 2rem;
-    fill: white;
-    background-color: tomato;
-    display: inline-block;
-} */
+
+/* Callouts */
+.callout {
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.callout--primary {
+    background: var(--color-primary);
+    color: white;
+}
+
+.callout__header {
+    color: white;
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.callout .btn {
+    justify-self: center;
+    align-self: center;
+}
+
+.callout__content {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout__content {
+        text-align: left;
+    }
+
+    .callout .btn {
+        justify-self: start;
+        margin: 0 2rem;
+    }
+}
