@@ -2,6 +2,7 @@
 :root {
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
+    --color-darker: #126de4;
     --color-accent: #ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;
@@ -110,6 +111,11 @@ a {
     color: white;
 }
 
+/* .badge--darker {
+    background: var(--color-darker);
+    color: white;
+} */
+
 .badge--small {
     font-size: 1.6rem;
     padding: 0.5rem 1.5rem;
@@ -142,7 +148,11 @@ a {
     padding-left: 3rem;
 }
 
-.list--tick .list__item {
+.list__none {
+    opacity: 0;
+}
+
+.list__none .list--tick .list__item {
     padding-left: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -221,6 +231,7 @@ a {
 
 .btn--popular {
     background: var(--color-headings);
+    color: white;
 }
 
 .btn--search {
@@ -345,7 +356,18 @@ a {
     background: #02cdf1;
 }
 
+.card--primary .badge--darker {
+    background: var(--color-darker);
+    color: white;
+}
+
 /* Plans */
+.plan {
+    margin: 3rem 2rem;
+    max-width: 488px;
+    transition: transform 0.2s ease-out;
+}
+
 .plan__name {
     color: white;
     margin: 0;
@@ -376,6 +398,10 @@ a {
     letter-spacing: 1px;
 }
 
+.plan--popular {
+    transform: scale(1.1);
+}
+
 .plan--popular .card__header {
     position: relative;
 }
@@ -387,6 +413,14 @@ a {
     position: absolute;
     top: -6px;
     right: 5%;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan--popular:hover {
+    transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {
@@ -495,6 +529,18 @@ a {
 /* Grids */
 .grid {
     display: grid;
+}
+
+.grid--1x3 {
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--1x3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -774,5 +820,23 @@ a {
 @media screen and (min-width: 768px) {
     .block-domain__prices {
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+}
+
+/* Plans Block */
+.block-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-plan .card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .plan-block {
+        flex-direction: row;
     }
 }
