@@ -46,7 +46,7 @@ p {
     margin-top: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px), screen and (min-width: 768px) {
     body {
         font-size: 1.8rem;
     }
@@ -536,7 +536,7 @@ a {
     justify-items: center;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .grid--1x3 {
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
@@ -838,5 +838,29 @@ a {
 @media screen and (min-width: 768px) {
     .plan-block {
         flex-direction: row;
+    }
+}
+
+/* Features */
+.feature {
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
+
+.feature:first-of-type {
+    margin-top: 4rem;
+}
+
+.feature__heading {
+    margin: 1rem 0;
+}
+
+.feature__image {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;
     }
 }
