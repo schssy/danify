@@ -240,14 +240,20 @@ a {
 }
 
 .btn--search {
-    height: 5.5rem;
-    width: 17.6rem;
+    height: 6rem;
+    width: 40rem;
     background: var(--color-accent);
     font-size: 1.8rem;
     font-weight: bold;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+.input-group .btn--search {
+    height: auto;
+    width: auto;
+    padding: 2rem 4vw;
 }
 
 .icon--search {
@@ -281,13 +287,6 @@ a {
         width: 19rem;
     }
 
-    .btn--secondary {
-        font-size: 1.4rem;
-        font-weight: 600;
-        height: 5rem;
-        width: 25.5rem;
-    }
-
     .btn--search {
         height: 6.7rem;
         width: 17.6rem;
@@ -296,6 +295,19 @@ a {
     .btn--gt {
         height: 6rem;
         width: 22.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .btn--secondary {
+        font-size: 1.4rem;
+        font-weight: 600;
+        height: 5rem;
+        width: 25.5rem;
+    }
+
+    .btn--popular {
+        margin-top: 4rem;
     }
 }
 
@@ -323,6 +335,7 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-group .btn {
@@ -369,7 +382,8 @@ a {
 /* Plans */
 .plan {
     margin: 3rem 2rem;
-    max-width: 488px;
+    max-width: 500px;
+    /* width: 460px; */
     transition: transform 0.2s ease-out;
 }
 
@@ -401,10 +415,6 @@ a {
 .plan .list__item {
     margin-bottom: 2rem;
     letter-spacing: 1px;
-}
-
-.plan--popular {
-    transform: scale(1.1);
 }
 
 .plan--popular .card__header {
@@ -442,7 +452,11 @@ a {
     }
 
     .plan__description {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+    }
+
+    .plan--popular {
+        transform: scale(1.1);
     }
 }
 
@@ -457,6 +471,10 @@ a {
     display: flex;
     margin-bottom: 1rem;
     margin-left: 3rem;
+}
+
+.media-text .htext {
+    color: var(--color-headings);
 }
 
 .hmedia {
@@ -537,11 +555,10 @@ a {
 }
 
 .grid--1x3 {
-    grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .grid--1x3 {
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
@@ -671,6 +688,9 @@ a {
     opacity: 1;
 }
 
+@media screen and (min-width: 768px) {
+}
+
 /* Block */
 .block {
     --padding-vertical: 6rem;
@@ -744,6 +764,7 @@ a {
 .nav__toggler {
     opacity: 0.5;
     transform: box-shadow 0.15s;
+    margin-right: 1rem;
 }
 
 .nav.collapsible--expanded .nav__toggler {
@@ -808,7 +829,8 @@ a {
 
 .block-domain__prices {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    color: var(--color-headings);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -825,7 +847,7 @@ a {
 
 /* Plans Block */
 .block-plan {
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
 }
@@ -890,13 +912,13 @@ a {
     background: #232323;
 }
 
-.collapsible {
-    border-bottom: 1px solid gray;
-    padding: 3rem 0;
-}
-
 .collapsible__heading {
     text-transform: uppercase;
+}
+
+.collapsible .collapsible__header {
+    border-bottom: 1px solid gray;
+    padding: 3rem 0;
 }
 
 .collapsible__list {
@@ -968,5 +990,10 @@ a {
     .collapsible__content {
         max-height: 100vh;
         opacity: 1;
+    }
+
+    .collapsible .collapsible__header {
+        border-bottom: 0;
+        padding: 0;
     }
 }
