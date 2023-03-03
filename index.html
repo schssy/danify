@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <meta name="description" content="Delpoy your websites in less than 60 seconds." />
+        <meta property="og:title" content="Moshify..." />
+        <meta property="og:description" content="Moshify..." />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:image"
+            content="https://www.google.com/url?sa=i&url=https%3A%2F%2Falphaanddata.com%2Fprojects%2Fprojects.php&psig=AOvVaw0V0amNUQlYQFhjkt84MVDw&ust=1677921939959000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOjExru4v_0CFQAAAAAdAAAAABAE"
+        />
+        <meta property="og:url" content="https://momayotay.com" />
+        <title>Momayotay - Go Online for Just $9</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <header>
@@ -140,7 +150,7 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, error.</p>
             </header>
             <article class="grid grid--1x2 feature">
-                <div class="feature__content">
+                <div class="feature__content" data-aos="fade-right">
                     <span class="icon-container">
                         <svg class="icon icon--primary">
                             <use xlink:href="images/sprite.svg#easy"></use>
@@ -153,15 +163,15 @@
                     </p>
                     <a href="#" class="link-arrow">Learn More</a>
                 </div>
-                <picture>
+                <picture data-aos="fade-left">
                     <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x" />
-                    <source type="image/png" srcset="images/easy.png 1x, images/easy@2x.png 2x" />
+                    <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x" />
                     <img class="feature__image" src="images/easy@2x.jpg" alt=""
                 /></picture>
             </article>
 
             <article class="grid grid--1x2 feature">
-                <div class="feature__content">
+                <div class="feature__content" data-aos="fade-left">
                     <span class="icon-container">
                         <svg class="icon icon--primary">
                             <use xlink:href="images/sprite.svg#computer"></use>
@@ -174,15 +184,15 @@
                     </p>
                     <a href="#" class="link-arrow">Learn More</a>
                 </div>
-                <picture>
+                <picture data-aos="fade-right">
                     <source type="image/webp" srcset="images/fast.webp 1x, images/fast@2x.webp 2x" />
-                    <source type="image/png" srcset="images/fast.png 1x, images/fast@2x.png 2x" />
+                    <source type="image/jpg" srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x" />
                     <img class="feature__image" src="images/fast@2x.jpg" alt=""
                 /></picture>
             </article>
 
             <article class="grid grid--1x2 feature">
-                <div class="feature__content">
+                <div class="feature__content" data-aos="fade-right">
                     <span class="icon-container">
                         <svg class="icon icon--primary">
                             <use xlink:href="images/sprite.svg#settings"></use>
@@ -195,15 +205,15 @@
                     </p>
                     <a href="#" class="link-arrow">Learn More</a>
                 </div>
-                <picture>
+                <picture data-aos="fade-left">
                     <source type="image/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x" />
-                    <source type="image/png" srcset="images/wordpress.png 1x, images/wordpress@2x.png 2x" />
+                    <source type="image/jpg" srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x" />
                     <img class="feature__image" src="images/wordpress@2x.jpg" alt=""
                 /></picture>
             </article>
 
             <article class="grid grid--1x2 feature">
-                <div class="feature__content">
+                <div class="feature__content" data-aos="fade-left">
                     <span class="icon-container">
                         <svg class="icon icon--primary">
                             <use xlink:href="images/sprite.svg#clock"></use>
@@ -216,9 +226,9 @@
                     </p>
                     <a href="#" class="link-arrow">Learn More</a>
                 </div>
-                <picture>
+                <picture data-aos="fade-right">
                     <source type="image/webp" srcset="images/support.webp 1x, images/support@2x.webp 2x" />
-                    <source type="image/png" srcset="images/support.png 1x, images/support@2x.png 2x" />
+                    <source type="image/jpg" srcset="images/support.jpg 1x, images/support@2x.jpg 2x" />
                     <img class="feature__image" src="images/support@2x.jpg" alt=""
                 /></picture>
             </article>
@@ -243,15 +253,16 @@
                                         <use xlink:href="images/sprite.svg#search"></use>
                                     </svg>
                                 </div>
-                        
+
                                 <div class="media-text">
                                     <h4 class="hmedia">Easy Start & Managed Updates</h4>
                                     <p class="pmedia">
-                                        Our cloud plans include easy onboarding for new and existing sites and managed WordPress and WooCommerce
-                                        auto-updates.
+                                        Our cloud plans include easy onboarding for new and existing sites and managed
+                                        WordPress and WooCommerce auto-updates.
                                     </p>
                                 </div>
                             </div>
+                        </div>
                     </li>
                     <li>
                         <div class="media-group">
@@ -260,12 +271,12 @@
                                     <use xlink:href="images/sprite.svg#growth"></use>
                                 </svg>
                             </div>
-                    
+
                             <div class="media-text">
                                 <h4 class="hmedia">Staging, Git & WP-CLI</h4>
                                 <p class="pmedia">
-                                    We make your WordPress and WooCommerce development flow easier with a convenient staging tool and Git
-                                    and WP-CLI integration.
+                                    We make your WordPress and WooCommerce development flow easier with a convenient
+                                    staging tool and Git and WP-CLI integration.
                                 </p>
                             </div>
                         </div>
@@ -277,12 +288,12 @@
                                     <use xlink:href="images/sprite.svg#wordpress"></use>
                                 </svg>
                             </div>
-                    
+
                             <div class="media-text">
                                 <h4 class="hmedia">Dynamic Caching & More</h4>
                                 <p class="pmedia">
-                                    Speed up your WordPress ad Woo sites with our SG Optimizer plugin through smart dynamic caching and
-                                    multiple other performance optimizations.
+                                    Speed up your WordPress ad Woo sites with our SG Optimizer plugin through smart
+                                    dynamic caching and multiple other performance optimizations.
                                 </p>
                             </div>
                         </div>
@@ -309,8 +320,8 @@
                     </div>
                     <blockquote class="quote">
                         <p class="quote__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vel aperiam similique explicabo,
-                            itaque minus modi fuga doloremque eos alias.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vel aperiam similique
+                            explicabo, itaque minus modi fuga doloremque eos alias.
                         </p>
                         <footer>
                             <div class="media-group">
@@ -319,7 +330,7 @@
                                         <use xlink:href="images/sprite.svg#line"></use>
                                     </svg>
                                 </div>
-        
+
                                 <div class="media-text quote__name">
                                     <h3 class="hmedia htext quote__name-title">John Smith</h3>
                                     <p class="pmedia quote__name-text">ABC Company</p>
@@ -333,10 +344,10 @@
 
         <footer class="block block--dark footer grid grid--1x5">
             <div class="collapsible collapsible--expanded">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__heading">Products</h2>
                     <img class="icon icon--collapsible collapsible__icon" src="images/chevron.svg" alt="" />
-                </header>
+                </div>
                 <div class="collapsible__content">
                     <ul class="list collapsible__list">
                         <li><a href="#">WordPress Hosting</a></li>
@@ -347,12 +358,12 @@
                     </ul>
                 </div>
             </div>
-        
+
             <div class="collapsible">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__heading">Company</h2>
                     <img class="icon icon--collapsible collapsible__icon" src="images/chevron.svg" alt="" />
-                </header>
+                </div>
                 <div class="collapsible__content">
                     <ul class="list collapsible__list">
                         <li><a href="#">About</a></li>
@@ -365,12 +376,12 @@
                     </ul>
                 </div>
             </div>
-        
+
             <div class="collapsible">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__heading">Support</h2>
                     <img class="icon icon--collapsible collapsible__icon" src="images/chevron.svg" alt="" />
-                </header>
+                </div>
                 <div class="collapsible__content">
                     <ul class="list collapsible__list">
                         <li><a href="#">Contact</a></li>
@@ -382,12 +393,12 @@
                     </ul>
                 </div>
             </div>
-        
+
             <div class="collapsible">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__heading">Domains</h2>
                     <img class="icon icon--collapsible collapsible__icon" src="images/chevron.svg" alt="" />
-                </header>
+                </div>
                 <div class="collapsible__content">
                     <ul class="list collapsible__list">
                         <li><a href="#">Domain Checker</a></li>
@@ -398,15 +409,17 @@
                     </ul>
                 </div>
             </div>
-        
+
             <div class="footer__image">
                 <img class="footer__logo" src="images/logo.png" alt="" />
                 <p class="collapsible__text">Copyright &copy; 2023 Momayotay</p>
             </div>
         </footer>
-        
-        
 
         <script src="js/main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
